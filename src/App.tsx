@@ -23,8 +23,8 @@ import Checkout from "./pages/CheckOut";
 const socket = io("https://league-of-legend-remake-server.vercel.app", {
   withCredentials: true,
   extraHeaders: {
-    "Access-Control-Allow-Origin": "https://league-of-legend.vercel.app",
-  },
+    "my-custom-header": "abcd"
+  }
 }).connect();
 function App() {
   return (
