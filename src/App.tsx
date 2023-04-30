@@ -20,9 +20,12 @@ import SignUp from "./pages/SignUp";
 import NewAdmin from "./pages/NewAdmin";
 import ProductAdmin from "./pages/ProductAdmin";
 import Checkout from "./pages/CheckOut";
-const socket = io(
-  "https://league-of-legend-remake-server.vercel.app"
-).connect();
+const socket = io("https://league-of-legend-remake-server.vercel.app", {
+  withCredentials: true,
+  extraHeaders: {
+    "my-custom-header": "abcd",
+  },
+}).connect();
 function App() {
   return (
     <div className="App">
