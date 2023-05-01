@@ -22,6 +22,9 @@ import ProductAdmin from "./pages/ProductAdmin";
 import Checkout from "./pages/CheckOut";
 const socket = io("https://league-of-legend-remake-server.vercel.app", {
   withCredentials: true,
+  extraHeaders: {
+    "my-custom-header": "abcd",
+  },
 }).connect();
 function App() {
   return (
