@@ -21,7 +21,7 @@ import NewAdmin from "./pages/NewAdmin";
 import ProductAdmin from "./pages/ProductAdmin";
 import Checkout from "./pages/CheckOut";
 const socket = io(
-  "https://league-of-legend-remake-server.vercel.app"
+  "https://league-of-legend-remake-server-j5lnwg630-thediep094.vercel.app/"
 ).connect();
 function App() {
   return (
